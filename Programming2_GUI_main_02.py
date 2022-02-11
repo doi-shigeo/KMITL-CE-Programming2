@@ -3,15 +3,16 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-from tkinter import *
+#from tkinter import *
+import tkinter as tk
 from tkinter import ttk
-root = Tk()
+root = tk.Tk()
 frm = ttk.Frame(root, padding=10)
 frm.grid()
 
 # Anchor attribute doesn't work...
 ttk.Label(frm, text="0").grid(column=0, columnspan=4, row=0)
-ttk.Label(frm, text="Hello World!").grid(column=0, row=4)
+ttk.Label(frm, text="Hello World!").grid(column=0, row=5)
 
 # To show result
 calc_result = ttk.Label(frm, text="")

@@ -2,8 +2,8 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-import tkinter
-from tkinter import *
+import tkinter as tk
+#from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
 
@@ -90,14 +90,14 @@ def eventhandler_op_minus(callback=None):
     return
 
 # start of the main program
-root = Tk()
+root = tk.Tk()
 root.title("Simple Calc") # Set title name
 frm = ttk.Frame(root, padding=10)
 frm.grid()
 
 # File menu
-menubar = tkinter.Menu(root)
-filemenu = tkinter.Menu(menubar)
+menubar = tk.Menu(root)
+filemenu = tk.Menu(menubar)
 
 # add submenu and bind an event handler
 filemenu.add_command(label="About", command=eventhandler_about)

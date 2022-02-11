@@ -3,7 +3,7 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-from tkinter import *
+import tkinter as tk
 from tkinter import ttk
 
 # 04: define event handlers
@@ -60,7 +60,7 @@ def eventhandler_digit0():
     return
 
 # start of the main program
-root = Tk()
+root = tk.Tk()
 frm = ttk.Frame(root, padding=10)
 frm.grid()
 
